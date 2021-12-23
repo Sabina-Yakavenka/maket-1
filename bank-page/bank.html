@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="../bank-page/styles_bank.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets-bank/images/logo.png" />
+    <title>Кредитный калькулятор ООО"ГрифФинКонсалт"</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <a href="#"><img src="./assets-bank/images/logo.png"></a>
+            <p>ООО "ГрифФинКонсалт"</p>
+        </div>
+        <nav>
+            <div class=header-buttons>
+                <a href="../main-page/index.html"><img src="./assets-bank/icons/calculator-header.png"></a>
+            </div>
+            <div class=header-buttons>
+                <a href="#"><img src="./assets-bank/icons/purse-header.png"></a>
+            </div>
+            <div class=header-buttons>
+                <a href="#"><img src="./assets-bank/icons/information-header.png"></a>
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper-bank-selection">
+        <h1>Подбор Банковских продуктов</h1>
+        <div class="wrapper-bank-selection-position">
+            <div class="bank-selection-list">
+                <div class="wrapper-bank-selection-list">
+                    <p>Список Банков</p>
+                    <hr class="wrapper-bank-selection-hr-dotted">
+                    <ul>
+                        <li><a href="#">ЗАО "МТБанк"</a></li>
+                        <li><a href="#">ОАО "БНБ Банк"</a></li>
+                        <li><a href="#">ЗАО "РРБ-Банк"</a></li>
+                        <li><a href="#">ОАО "Приорбанк"</a></li>
+                        <li><a href="#">ОАО "Паритетбанк"</a></li>
+                        <li><a href="#">ОАО "Статусбанк"</a></li>
+                        <li><a href="#">ОАО "Альфа-банк"</a></li>
+                        <li><a href="#">ОАО "Сбербанк"</a></li>
+                        <li><a href="#">ОАО "Белгазпромбанк"</a></li>
+                        <li><a href="#">ОАО "Банк БелВЭБ"</a></li>
+                        <li><a href="#">ЗАО "Банк ВТБ"</a></li>
+                        <li><a href="#">ОАО "Технобанк"</a></li>
+                        <li><a href="#">ЗАО "БСБ Банк"</a></li>
+                        <li><a href="#">ЗАО "Банк Решение"</a></li>
+                        <li><a href="#">ЗАО "БТА Банк"</a></li>
+                        <li><a href="#">ЗАО "Абсолютбанк"</a></li>
+                        <li><a href="#">ОАО "Франсабанк"</a></li>
+                        <li><a href="#">ЗАО "Цептер Банк"</a></li>
+                        <li><a href="#">ОАО "АСБ Беларусбанк"</a></li>
+                        <li><a href="#">ОАО "Банк Дабрабыт"</a></li>
+                        <li><a href="#">ОАО "Белагропромбанк"</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bank-selection">
+                <p class="bank-selection-caption">Данные для подбора кредитного продукта</p>
+                <hr class="bank-selection-hr-dotted">
+                <div class="bank-selection-block">
+                    <div class="bank-selection-input-left"> 
+                        <div class="bank-selection-input-left-name">
+                            <p>Возраст:</p>
+                            <p>Заработная плата:</p>
+                            <p>Иждивенцы:</p>
+                            <p>Кредитный рейтинг:</p>
+                        </div>
+                        <div class="bank-selection-input-left-input">
+                            <input class="years-client-bank-selection" type="text">
+                            <input class="sum-bank-selection" type="text" placeholder="руб.">
+                            <select class="dependents-list-bank-selection">
+                                <option value="none-content">не выбрано</option>
+                                <option value="one">Один</option>
+                                <option value="two">Два</option>
+                                <option value="three">Три</option>
+                                <option value="four">Четрые</option>
+                                <option value="five">Пять и более</option>
+                            </select>   
+                            <select class="credit-class-list-bank-selection">
+                                <option value="none-content">не выбрано</option>
+                                <option value="f-class">F</option>
+                                <option value="e-three">E3</option>
+                                <option value="e-two">E2</option>
+                                <option value="e-one">E1</option>
+                                <option value="c-three">C3</option>
+                                <option value="c-two">C2</option>
+                                <option value="c-three">C3</option>
+                                <option value="b-three">B3</option>
+                                <option value="b-two">B2</option>
+                                <option value="b-one">B1</option>
+                                <option value="a-three">A3</option>
+                                <option value="a-two">A2</option>
+                                <option value="a-one">A1</option>
+                            </select>   
+                        </div>
+                    </div>  
+                    <div class="bank-selection-input-right">
+                        <div class="bank-selection-input-right-text">
+                            <p>Военный билет:</p>
+                            <p>Просрочки:</p>
+                            <p>Количество запросов:</p>
+                        </div>
+                        <div class="bank-selection-input-right-input">
+                            <div class="army-input-radio">
+                                <div class="radio-item1"><input type="radio" class="radio-army-yes" id="army_yes" name="type" value="army_yes"></div>
+                                <div class="radio-item2"><label for="army_yes">Есть</label></div>
+                                <div class="radio-item3"><input type="radio" class="radio-army-none" id="army_none" name="type" value="army_none"></div>
+                                <div class="radio-item4"><label for="army_none">Отсутствует</label></div>
+                            </div>                            
+                            <select class="bank-selection-input-right-selection-delay">
+                                <option value="none-content">не выбрано</option>
+                                <option value="f-class">до 7 дней</option>
+                                <option value="e-three">до 30 дней</option>
+                                <option value="e-two">до 60 дней</option>
+                                <option value="e-one">до 90 дней</option>
+                                <option value="c-three">до 180 дней</option>
+                                <option value="c-two">ИЛ (=> 180 дней)</option>
+                            <select>
+                            <select class="bank-selection-input-right-selection-requests">
+                                <option value="none-content">не выбрано</option>
+                                <option value="f-class">1</option>
+                                <option value="e-three">2</option>
+                                <option value="e-two">3</option>
+                                <option value="e-one">4</option>
+                                <option value="c-three">5 и более</option>
+                            <select>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

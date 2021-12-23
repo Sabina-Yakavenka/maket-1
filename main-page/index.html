@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets-main/images/logo.png">
+    <title>Кредитный калькулятор ООО"ГрифФинКонсалт"</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+                <a href="#"><img src="./assets-main/images/logo.png"></a>
+                <p>ООО "ГрифФинКонсалт"</p>
+        </div>
+        <nav> 
+            <div class=header-buttons>
+                <a href="../bank-page/bank.html"><img src="./assets-main/icons/bank-header.png"></a>
+            </div>
+            <div class=header-buttons>
+                <a href="#"><img src="./assets-main/icons/purse-header.png"></a>
+            </div>
+            <div class=header-buttons>
+                <a href="#"><img src="./assets-main/icons/information-header.png"></a>
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper-cc">
+        <h1>Кредитный калькулятор</h1>
+        <div class="cc-data-input">
+            <div class="wrapper-cc-data">
+                <div class="wrapper-cc-data-name">
+                    <div class="wrapper-cc-data-name-sum">
+                        <p>Сумма кредита:</p>
+                    </div>
+                    <div class="wrapper-cc-data-name-term">
+                        <p>Срок кредита:</p>
+                    </div>
+                    <div class="wrapper-cc-data-name-rate">
+                        <p>Процентная ставка:</p>
+                    </div>
+                    <div class="wrapper-cc-data-name-typePay">
+                        <p>Тип выплат:</p>
+                    </div>
+                    <div class="wrapper-cc-data-name-startPay">
+                        <p>Начало выплат:</p>
+                    </div>
+                </div>
+                <div class="wrapper-cc-input">
+                    <input class="sum-input-cc" type="text" placeholder="руб.">
+                    <select class="list-input-cc">
+                        <option value="none-content">не выбрано</option>
+                        <option value="six-months">6 месяцев</option>
+                        <option value="one-year">1 год</option>
+                        <option value="1.5-year">1,5 года</option>
+                        <option value="two-years">2 года</option>
+                        <option value="2.5-years">2,5 года</option>
+                        <option value="three-years">3 года</option>
+                        <option value="3.5-years">3,5 года</option>
+                        <option value="four-years">4 года</option>
+                        <option value="4.5-years">4,5 года</option>
+                        <option value="five-years">5 лет</option>
+                        <option value="5.5-years">5,5 лет</option>
+                        <option value="six-years">6 лет</option>
+                        <option value="6.5-years">6,5 лет</option>
+                        <option value="seven-years">7 лет</option>
+                        <option value="ten-years">10 лет</option>
+                    </select>
+                    <input class="percent-input-cc" type="text" placeholder="%">
+                    <div class="wrapper-cc-input-radio">
+                        <div class="ann-input-radio-cc">
+                            <input type="radio" id="TypePayChoice1"  name="type" value="payType1">
+                            <label for="contactChoice2">аннуитетный</label>
+                        </div>
+                        <div class="dif-input-radio-cc">
+                            <input type="radio" id="cypePayChoice2"  name="type" value="payType2"> 
+                            <label for="contactChoice2">дифференцированный</label>
+                        </div>
+                    </div>  
+                    <div class="start-pay-cc">
+                            <div class="start-pay-cc-months">
+                                <select>
+                                    <option value="2022-year">2022</option>
+                                    <option value="2023-year">2023</option>
+                                    <option value="2024-year">2024</option>
+                                    <option value="2025-year">2025</option>
+                                    <option value="2026-year">2026</option>
+                                    <option value="2027-year">2027</option>
+                                    <option value="2028-year">2028</option>
+                                    <option value="2029-year">2029</option>
+                                    <option value="2030-year">2030</option>
+                                    <option value="2031-year">2031</option>
+                                    <option value="2032-year">2032</option>
+                                </select>
+                            </div>
+                            <div class="start-pay-cc-years">
+                                <select>
+                                    <option value="2022-year">Январь</option>
+                                    <option value="2023-year">Февраль</option>
+                                    <option value="2024-year">Март</option>
+                                    <option value="2025-year">Апрель</option>
+                                    <option value="2026-year">Май</option>
+                                    <option value="2027-year">Июнь</option>
+                                    <option value="2028-year">Июль</option>
+                                    <option value="2029-year">Август</option>
+                                    <option value="2030-year">Сентябрь</option>
+                                    <option value="2031-year">Октябрь</option>
+                                    <option value="2032-year">Ноябрь</option>
+                                    <option value="2032-year">Декабрь</option>
+                                </select>
+                            </div>                        
+                    </div>
+                    <div class="reset-info-input-cc">
+                        <input type="reset" value="Очистить">
+                    </div>
+                </div>
+            </div>
+            <div class="calculation-results">
+                <div class="calculation-results-button">
+                    <div class="calculation-results-name">
+                        <div class="results-name-months-pay">
+                            <p>Ежемесячный платеж:</p>
+                        </div>
+                        <div class="results-name-sum">
+                            <p>Общая сумма выплат:</p>
+                        </div>
+                        <div class="results-name-over-sum">
+                            <p>Переплата по кредиту:</p>
+                        </div>
+                        <div class="results-name-precent-pay">
+                            <p>Процент переплаты:</p>
+                        </div>
+                        <div class="results-name-pay-over">
+                            <p>Окончание выплат:</p>
+                        </div>
+                    </div>
+                    <div class="calculation-results-data">
+                        <input type="text" readonly placeholder="руб.">
+                        <input type="text" readonly placeholder="руб.">
+                        <input type="text" readonly placeholder="руб.">
+                        <input type="text" readonly placeholder="%">
+                        <input type="text" readonly>
+                    </div>
+                </div>
+                <div class="calculation-results-button-grafik-pay">
+                    <button class="button-cc-grafik-pay">График платежей</button>
+                </div>
+            </div>     
+        </div>
+    </div>
+</body>
+</html> 
